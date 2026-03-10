@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio - Aulia Marhaban Putri</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+padding:40px;
+background:linear-gradient(135deg,#ffd6e0,#e0f0ff,#e4ffe7);
+text-align:center;
+}
+
+h1{
+font-size:40px;
+margin-bottom:40px;
+color:#444;
+}
+
+.portfolio{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+position:relative;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:0.4s;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+transition:0.4s;
+}
+
+.card:hover img{
+transform:scale(1.1);
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+opacity:0;
+transition:0.4s;
+padding:20px;
+}
+
+.card:hover .overlay{
+opacity:1;
+}
+
+.btn{
+display:inline-block;
+margin-top:40px;
+padding:12px 25px;
+background:#a5b4fc;
+color:white;
+text-decoration:none;
+border-radius:15px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>My Portfolio</h1>
+
+<div class="portfolio">
+
+<div class="card">
+<img src="../foto.jpg" alt="Foto Profil">
+<div class="overlay">
+<h3>Organization Activity</h3>
+<p>Active in campus organization activities.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8" alt="Poster Design">
+<div class="overlay">
+<h3>Poster Design</h3>
+<p>Created poster designs using Photoshop.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="Logo Design">
+<div class="overlay">
+<h3>Logo Design</h3>
+<p>Designed logos using CorelDRAW.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="Web Design">
+<div class="overlay">
+<h3>Web Design</h3>
+<p>Created websites using HTML, CSS, JavaScript.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="../foto1.jpg.jpeg" alt="Team Project">
+<div class="overlay">
+<h3>Team Project</h3>
+<p>Worked together in a web development team.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a" alt="UI Design">
+<div class="overlay">
+<h3>UI Design</h3>
+<p>Designed modern website interface.</p>
+</div>
+</div>
+
+</div>
+
+<a href="index.html" class="btn">Back Home</a>
+
+</body>
+</html>

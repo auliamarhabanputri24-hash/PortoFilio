@@ -1,0 +1,32 @@
+body{
+font-family: Arial;
+background-color:#f5f7ff;
+color:#444;
+text-align:center;
+margin:0;
+}
+
+header{
+background:#dbe4ff;
+padding:20px;
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+color:#333;
+font-weight:bold;
+padding:10px 15px;
+background:#c7d2fe;
+border-radius:8px;
+transition:0.3s;
+}
+
+nav a:hover{
+background:#a5b4fc;
+transform:scale(1.05);
+}
+
+section{
+padding:40px;
+}
